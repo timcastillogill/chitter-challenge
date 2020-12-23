@@ -1,1 +1,1 @@
-CREATE TABLE users(id SERIAL, username VARCHAR(25) NOT NULL, enabled boolean DEFAULT TRUE, last_login timestamp NOT NULL DEFAULT NOW(), PRIMARY KEY (id));
+CREATE TABLE users (id serial, first_name VARCHAR(50), last_name VARCHAR(50), username VARCHAR(25), last_login timestamp NOT NULL DEFAULT NOW(), PRIMARY KEY (id));

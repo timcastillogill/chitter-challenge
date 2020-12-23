@@ -1,10 +1,7 @@
 class Chit
 
   def self.all
-    [
-      "Grim weather today",
-      "Made a strogonoff, was delicious",
-      "Had to leave the house, cabin fever"
-    ]
+    connection = PG.connect(dbname: 'chitter_manager')
+    connection.exec("SELECT * FROM chitters;")
   end
 end
