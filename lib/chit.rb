@@ -1,7 +1,10 @@
+require 'pg'
+
 class Chit
 
   def self.all
     connection = PG.connect(dbname: 'chitter_manager')
-    connection.exec("SELECT * FROM chitters;")
+    result = connection.exec("SELECT * FROM chitters;")
+    result.map { |chit| chit['message'] }
   end
 end
