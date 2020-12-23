@@ -2,14 +2,25 @@
 
 ## Setup
 
-#### Create Database and Tables
+### Create Database and Tables - DEVELOPMENT
 
-**Database**
+Database
 1. Connect to `psql`
 2. Create the database using the `psql` command `CREATE DATABASE chitter_manager;`
 3. Connect to the database using the `psql` command `\c chitter_manager;`
 
-**Tables**
+Tables
+1. For the users table run the query I have saved in the file `01_create_users_table.sql`
+2. For the chit table run the query I have saved in the file `02_create_chit_table.sql`
+---
+### Create Database and Tables - TEST
+
+Database
+1. Connect to `psql`
+2. Create the database using the `psql` command `CREATE DATABASE chitter_manager_test;`
+3. Connect to the database using the `psql` command `\c chitter_manager_test;`
+
+Tables
 1. For the users table run the query I have saved in the file `01_create_users_table.sql`
 2. For the chit table run the query I have saved in the file `02_create_chit_table.sql`
 

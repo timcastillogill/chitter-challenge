@@ -1,1 +1,1 @@
-CREATE TABLE chitters (id serial, user_id int, message VARCHAR(200), PRIMARY KEY(id), FOREIGN KEY (user_id) REFERENCES users(id));
+CREATE TABLE chitters (id serial, user_id int, message VARCHAR(200), chit_time timestamp NOT NULL DEFAULT NOW(), PRIMARY KEY(id), FOREIGN KEY (user_id) REFERENCES users(id));

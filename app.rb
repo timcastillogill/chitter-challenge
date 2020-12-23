@@ -8,6 +8,7 @@ class ChitterManager < Sinatra::Base
   end
 
   get '/chits' do
+    p ENV
     @chits = Chit.all
     erb :chits
   end
